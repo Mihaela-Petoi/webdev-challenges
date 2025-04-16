@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+  <meta charset = "UTF-8">
+  <meta name    = "viewport"
+        content = "width=device-width, initial-scale=1.0">
+
+  <title>🤪 Guess the Number</title>
+  
+  <style>
+    body {
+      background-color: #b3e6fb;
+    }
+
+    button {
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-family: 'Arial';
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1> ✿ Guess the Number ✿ </h1>
+
+  <p>Guess a number between 1 and 100:</p>
+
+  <input type     = "number"
+         id       = "guessInput"
+         min      = "1" 
+         max      = "100"
+  >
+
+  <button onclick = "checkGuess()">R U N</button>
+
+  <div id         = "feedback"></div>
+
+  <script src     = "main.js"></script>
+</body>
+
+</html>
